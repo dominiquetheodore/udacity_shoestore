@@ -3,6 +3,7 @@ package com.udacity.shoestore
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -22,6 +23,11 @@ private const val ARG_PARAM2 = "param2"
 class WelcomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
+
+    override fun onPrepareOptionsMenu(menu: Menu){
+        menu.clear()
     }
 
     override fun onCreateView(

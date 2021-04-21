@@ -6,11 +6,7 @@
         <variable name="viewModel" type="com.udacity.shoestore.ShoeStoreViewModel" />
     </data>
 
-    <!-- constraint layout for shoe detail screen -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+    <!-- used a linear layout for shoe detail screen (UI is simple and only requires EditText fields stacked -->
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="403dp"
@@ -97,7 +93,4 @@
                 android:text="Cancel" />
 
         </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

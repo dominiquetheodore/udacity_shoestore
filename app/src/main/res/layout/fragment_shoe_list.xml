@@ -6,8 +6,8 @@
     <data>
         <variable name="shoe" type="com.udacity.shoestore.models.Shoe" />
     </data>
-    <!-- Relative layout for shoe list -->
-    <RelativeLayout
+    <!-- Constraint layout for shoe list due to slightly more complex layout with nested views and action button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ShoeListFragment">
@@ -45,5 +45,5 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
